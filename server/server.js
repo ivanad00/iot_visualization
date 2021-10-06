@@ -31,7 +31,7 @@ from(bucket: "${bucket}")
   |> yield(name: "mean")
 `;
 
-const airQualityFirst = `
+const airQuality = `
 from(bucket: "${bucket}")
   |> range(start:-5d)
  |> filter(fn: (r) => r["_measurement"] == "mqtt_consumer")
@@ -92,7 +92,7 @@ app.get("/client/temp/1", (req, res) => {
 
 app.get("/client/air/1", (req, res) => {
   let csv = "";
-  let clientQuery = flux`` + airQualityFirst;
+  let clientQuery = flux`` + airQuality;
   queryApi.queryLines(clientQuery, {
     next(line) {
       csv = `${csv}${line}\n`;
