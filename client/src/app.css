@@ -1,0 +1,75 @@
+.header {
+  background-color: #6bb8ff;
+  height: 63px;
+  margin-bottom: 30px;
+  color: #cfaa02d8;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-style: italic;
+  font-size: 45px;
+  position: sticky;
+}
+
+.button {
+  height: 60px;
+  position: relative;
+  width: 200px;
+  font-size: large;
+  font-family: ui-serif;
+  border-block-color: #6bb8ff;
+  background-color: palegoldenrod;
+}
+
+.style {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  height: 60px;
+  position: relative;
+}
+
+.page {
+  text-align-last: center;
+}
+.state {
+  display: inline;
+  position: absolute;
+  width: 200px;
+  margin-left: 40px;
+  margin-bottom: 18px;
+}
+
+.lastValue {
+  height: 250px;
+  margin: auto;
+}
+
+.field{
+  margin-top:50px;
+  font-size:40px;
+  font-family:"Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* @media only screen and (max-width: 450px) {
+  .giraffe-layer.giraffe-layer-single-stat {
+width: 250px;
+  }
+  .giraffe-layer-single-stat{
+    width:200px;
+  }
+  .giraffe-single-stat--svg{
+    width:200px
+  }
+  .giraffe-single-stat--text{
+    font-size:50px;
+  }
+
+  .field{
+    width:350px;
+    font-size:20px;
+  }
+} */
